@@ -5,30 +5,13 @@ Descrição
 O sistema da qual a API faz parte é um sistema de uma livraria. Nele, os clientes podem pesquisar por livros e autores. Se o livro estiver em estoque, o preço é apresentado, caso contrário, o cliente pode indicar o interesse pelo livro, recebendo um e-mail avisando quando o livro estiver disponível. Os funcionários podem acessar o sistema para cadastrar novos livros e autores, atualizar ou deletar os já existentes. Também podem alterar o estoque, quando novos exemplares forem recebidos.
 A API Rest desenvolvida faz o controle dos livros da livraria. Nela é possível adicionar, listar, atualizar e deletar registros de livros. 
 
-URI ou rota do recurso
-Método HTTP
-Status bem-sucedido
-Status mal-sucedido
-/api/livros
-GET
-200
--
-/api/livros/{id}
-GET
-200
-400, 404
-/api/livros
-POST
-201
-400
-/api/livros/{id}
-PUT
-200
-400, 404
-/api/livros/{id}
-DELETE
-200
-400, 404
+URI ou rota do recurso | Método HTTP | Status bem-sucedido | Status mal-sucedido
+------------ | ------------- | ------------- | -------------
+/api/livros | GET | 200 | -
+/api/livros/{id} | GET | 200 | 400, 404
+/api/livros | POST | 201 | 400
+/api/livros/{id} | PUT | 200 | 400, 404
+/api/livros/{id} | DELETE | 200 | 400, 404
 
 Recurso
 Abaixo os campos do recurso acessado pela API:
